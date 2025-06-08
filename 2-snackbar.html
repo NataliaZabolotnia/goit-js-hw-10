@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="iziToast.min.css" />
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DywNLWWQ.css">
+  </head>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="nav-logo" href="./index.html" aria-label="Site logo">
+          <svg class="nav-logo-icon" width="100" height="30">
+            <use href="{=$icon-path}"></use>
+          </svg>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link {=$highlight-act}" href="./page-2.html">Timer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {=$highlight-curr}" href="./page-3.html"
+              >Snackbar</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <main>
+      <div class="container">
+        <form class="form">
+          <label class="label-delay">
+            Delay (ms)
+            <input type="number" name="delay" class="input-delay" required />
+          </label>
+
+          <fieldset>
+            <legend>State</legend>
+            <label class="radio">
+              <input
+                type="radio"
+                name="state"
+                value="fulfilled"
+                class="input-state"
+                required
+              />
+              Fulfilled
+            </label>
+            <label class="radio">
+              <input
+                type="radio"
+                name="state"
+                value="rejected"
+                class="input-state"
+                required
+              />
+              Rejected
+            </label>
+          </fieldset>
+          <button type="submit" class="btn-delay">Create notification</button>
+        </form>
+        <a class="back-link" href="./index.html">Go back</a>
+      </div>
+    </main>
+  </body>
+</html>
